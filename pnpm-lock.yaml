@@ -165,6 +165,10 @@ settings:
 importers:
 
   .:
+    dependencies:
+      run:
+        specifier: ^2.1.4
+        version: 2.1.4
     devDependencies:
       gh-pages:
         specifier: ^6.3.0
@@ -335,6 +339,15 @@ packages:
 
   run-parallel@1.2.0:
     resolution: {integrity: sha512-5l4VyZR86LZ/lDxZTR6jqL8AFE2S0IFLMP26AbjsLVADxHdhB/c0GUsH+y39UfCi3dzz8OlQuPmnaJOMoDHQBA==}
+
+  run@2.1.4:
+    resolution: {integrity: sha512-Rd8W2wO0LWdwlNbqKJm/o0WpQ/VQ42KRR6MUgnaujjjVOdS0o3bTMZ9dCjWCQAeuIj6jhG58WkqkeGz0cvOIrA==}
+    engines: {node: '>=20.19.0'}
+    peerDependencies:
+      typescript: '>=5.1.6 <7'
+    peerDependenciesMeta:
+      typescript:
+        optional: true
 
   semver@6.3.1:
     resolution: {integrity: sha512-BR7VvDCVHO+q2xBEWskxS6DJE1qRnb7DxzUrogb71CWoSficBxYsiAGd+Kl0mmq/MprG9yArRkyrQxTO6XjMzA==}
@@ -522,6 +535,8 @@ snapshots:
   run-parallel@1.2.0:
     dependencies:
       queue-microtask: 1.2.3
+
+  run@2.1.4: {}
 
   semver@6.3.1: {}
 
